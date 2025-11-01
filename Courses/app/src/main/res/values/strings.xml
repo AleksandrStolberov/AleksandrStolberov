@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Courses</string>
+    <string name="entrance_txt">Вход</string>
+    <string name="enter_password_txt">Введите пароль</string>
+    <string name="enter_btn_txt">Вход</string>
+    <string name="no_account_txt">Нет аккаунта?</string>
+    <string name="registration_txt">Регистрация</string>
+    <string name="forgot_txt">Забыл пароль</string>
+    <string name="example_txt">example@gmail.com</string>
+    <string name="main_txt">Главное</string>
+    <string name="favorite_txt">Избранное</string>
+    <string name="profile_txt">Аккаунт</string>
+    <string name="search_courses_txt">Search courses...</string>
+</resources>

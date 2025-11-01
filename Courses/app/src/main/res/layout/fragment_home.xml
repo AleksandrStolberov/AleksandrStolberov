@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <include layout="@layout/search_view" />
+
+    <FrameLayout
+        android:id="@+id/sortButton"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:clickable="true"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="По дате добавления"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="12dp"
+            android:layout_height="15dp"
+            android:layout_gravity="end|center"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/sort_img" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        tools:listitem="@layout/item_course" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/dark_grey" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/errorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:visibility="gone"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/white_200"
+        tools:text="Ошибка"/>
+
+</LinearLayout>
